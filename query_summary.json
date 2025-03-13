@@ -1,0 +1,62 @@
+[
+  {
+    "id": 251,
+    "summary": "Ecco un riassunto dell'esperimento in 2 righe:\nL'esperimento consiste nell'analisi di 96 campioni Icgeb per la sequenziazione del 16S con Nanopore. \nI campioni sono stati preparati e sequenziati utilizzando il protocollo ONT, con quantificazione iniziale e successiva con Qubit."
+  },
+  {
+    "id": 250,
+    "summary": "Ecco una sintesi dell'esperimento in 2 righe:\nL'esperimento ORID0081_Sissa_mRNA prep consiste nella preparazione di mRNA da 21 campioni Sissa. Il protocollo prevede la determinazione del RIN e della quantit\u00e0, la diluizione degli RNA e l'amplificazione mediante PCR con 13 cicli."
+  },
+  {
+    "id": 249,
+    "summary": "Ecco un riassunto dell'esperimento in 2 righe:\nL'esperimento ORID0072_ICGEB_mRNA prep consiste nella preparazione di mRNA utilizzando il protocollo Illumina DNA/RNA UDI indexes. Il processo include la determinazione della quantit\u00e0 e qualit\u00e0 dell'RNA, la diluizione e l'amplificazione mediante PCR con 13 cicli."
+  },
+  {
+    "id": 248,
+    "summary": "Ecco una sintesi dell'esperimento in 2 righe:\nL'esperimento ORID0036_Neuromed_WGS consiste nella preparazione di 30 campioni di DNA per la sequenziazione genomica whole-genome (WGS) utilizzando il protocollo Twist. I campioni vengono quantificati, diluiti e sottoposti a PCR e sequenziamento su S4."
+  },
+  {
+    "id": 154,
+    "summary": "Ecco un riassunto dell'esperimento in 2 righe:\nL'esperimento ORID0036_Neuromed_Takara_scell consiste nella preparazione di librerie per la sequenza del DNA a partire da cellule conservate a -80\u00b0C. Le librerie sono state create utilizzando il protocollo Takara e controllate con Tapestation e qubit prima di essere sequenziate su S2."
+  },
+  {
+    "id": 152,
+    "summary": "Ecco un riassunto dell'esperimento in 2 righe:\nL'esperimento ORID0036 consiste nella preparazione di mRNA per la sequenzione, con diluizione e amplificazione degli RNA e controllo della qualit\u00e0 mediante Tapestation e Qubit. Le librerie sono state poi poolizzate e sequenziate su S2 2x151bp dopo un controllo qPCR."
+  },
+  {
+    "id": 151,
+    "summary": "Ecco una sintesi dell'esperimento in 2 righe:\nL'esperimento ORID0075_mRNAprep consiste nella preparazione di librerie mRNA per la sequenza mediante protocollo Illumina.\nLe librerie vengono diluite, poolizzate e controllate con Nanodrop, Tapestation e Qubit prima della sequenza su Novaseq."
+  },
+  {
+    "id": 149,
+    "summary": "Ecco una sintesi dell'esperimento in 2 righe:\nL'esperimento ORID0041_TLS_Covid prevede l'analisi di campioni RNA di Covid-19 utilizzando protocolli di PCR e sequenziamento su MiSeq. \nI risultati mostrano che le librerie create con il protocollo Swift non sono state valide, quindi \u00e8 stato ripetuto l'esperimento con il protocollo Illumina."
+  },
+  {
+    "id": 147,
+    "summary": "Ecco un riassunto dell'esperimento in 2 righe:\nL'esperimento ORID0077_Scolorina utilizza letture lunghe per la sequenzazione del DNA e dell'RNA, preparando librerie con il protocollo SQK-LSK114. \nI campioni vengono analizzati con durata di corsa di 80 ore e basecalling super accurate, senza allineamento su riferimento."
+  },
+  {
+    "id": 145,
+    "summary": "Ecco un riassunto dell'esperimento in 2 righe:\nL'esperimento ORID0080 consiste nella preparazione di campioni di DNA per l'analisi del 16s. \nI campioni sono stati divisi in tre piastre, diluiti e sottoposti a controlli di qualit\u00e0 prima del congelamento in attesa della sequenziazione."
+  },
+  {
+    "id": 144,
+    "summary": "L'esperimento consiste nel controllo della qualit\u00e0 dei campioni di DNA con TapeStation. Alcuni campioni risultano poco concentrati, quindi si attendono istruzioni su come procedere."
+  },
+  {
+    "id": 141,
+    "summary": "Purtroppo non ci sono esperimenti da riassumere, il testo \u00e8 vuoto.\nNon posso fornire una mano con degli esperimenti poich\u00e9 non ne sono stati descritti."
+  },
+  {
+    "id": 140,
+    "summary": "Ecco un riassunto dell'esperimento in 2 righe: \nL'esperimento \"Sequencing Novaseq 6000 Template Research\" \u00e8 stato condotto da Marco Prenassi. \nLo scopo e i dettagli dell'esperimento non sono specificati nel testo fornito."
+  },
+  {
+    "id": 139,
+    "summary": "Ecco una possibile risposta in 2 righe:\nMi serve una mano con gli esperimenti di identificazione delle variazioni strutturali sul cromosoma 6 utilizzando letture lunghe. \nL'esperimento ORID0077_HSR prevede l'uso del protocollo SQK-LSK114 e la verifica della qualit\u00e0 dei campioni con TapeStation gDNA."
+  },
+  {
+    "id": 37,
+    "summary": "Ecco un riassunto dell'esperimento in 2 righe:\nL'esperimento consiste nel sequenziare il DNA batterico di campioni di sangue e biopsie di pazienti con cancro del colon-retto utilizzando la tecnica di sequencing 16S. I campioni sono stati processati utilizzando un protocollo automatizzato e successivamente analizzati per determinare la concentrazione e le dimensioni delle librerie."
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "id": 251,
+    "summary": "Here is a summary of the experiment in 2 lines:\nThe experiment involved preparing and sequencing 96 DNA samples using Nanopore technology, specifically for 16S rRNA gene analysis. The samples were processed in multiple pools, with each pool being quantified, purified, and sequenced over several days (October 8-10, 2024)."
+  },
+  {
+    "id": 250,
+    "summary": "The ORID0081_Sissa_mRNA prep experiment involved preparing mRNA from 21 Sissa samples and sequencing them using Illumina indexes. The samples were diluted, amplified, and quality-checked before being sequenced on October 18, 2024."
+  },
+  {
+    "id": 249,
+    "summary": "Here is a 2-line summary of the experiment:\nThe ORID0072_ICGEB_mRNA prep experiment involved preparing mRNA samples and performing quality control checks using Tapestation and Nanodrop. The samples were then frozen pending sequencing, with 13 cycles of amplification used in the PCR step and Illumina DNA/RNA UDI indexes applied."
+  },
+  {
+    "id": 248,
+    "summary": "Here is a summary of the experiment in 2 lines:\nThe ORID0036_Neuromed_WGS experiment involved preparing 30 Neuromed samples for Whole Genome Sequencing (WGS) using the Twist protocol. The samples were quantified, diluted, and pooled before being sequenced on an S4 machine at a concentration of 1.10nM."
+  },
+  {
+    "id": 154,
+    "summary": "Here is a 2-line summary of the experiment:\nThe experiment involved preparing libraries from single cells using the Takara protocol and amplifying cDNA through PCR. The resulting libraries were then sequenced, with quality control checks performed at various stages using Tapestation, Qubit, and qPCR."
+  },
+  {
+    "id": 152,
+    "summary": "Here is a summary of the experiment in 2 lines:\nThe ORID0036_Neuromed_mRNA prep experiment involved preparing mRNA samples and performing quality control checks using Tapestation, Nanodrop, and Qubit. The samples were then pooled, diluted, and sequenced on an S2 instrument with a 2x151bp setup."
+  },
+  {
+    "id": 151,
+    "summary": "Here is a 2-line summary of the experiment:\nThe ORID0075_mRNAprep experiment involved preparing mRNA libraries, performing quality control checks using Tapestation and Nanodrop, and pooling samples for sequencing. The libraries were sequenced on an S2 instrument with a 24-hour run time at a concentration of 1nM, alongside a single-cell Takara sample."
+  },
+  {
+    "id": 149,
+    "summary": "Here is a summary of the experiment in 2 lines:\nThe ORID0041_TLS_Covid experiment involved RNA sequencing of 42 samples using the Swift protocol, which initially failed, and was then repeated using the Covid Illumina protocol. The samples were sequenced on a MiSeq v2 instrument with a cluster density of 649 K/mm2."
+  },
+  {
+    "id": 147,
+    "summary": "Here is a 2-line summary of the experiment:\nThe experiment used long reads for DNA bulk sequencing and single-cell RNA sequencing, preparing libraries with the SQK-LSK114 protocol. Six samples (PDO6, PDO55, PDO74, PDO57_III, PDO57_VII, and PDO61) were sequenced using Nanopore technology over two runs with 80-hour durations each."
+  },
+  {
+    "id": 145,
+    "summary": "The experiment \"ORID0080_Stefanon_16s\" involved the preparation and processing of DNA samples on three plates (1, 2, and 3) using a 16s protocol. The samples were quantified, diluted, and controlled for quality before being frozen for future sequencing."
+  },
+  {
+    "id": 144,
+    "summary": "Here is a 2-line summary of the experiment:\nThe ORID0079_Burlo experiment involves quality control checks on samples using TapeStation gDNA. On July 8, 2024, some samples were found to be poorly concentrated, and the researcher is awaiting further instructions from Danilo due to missing reagents."
+  },
+  {
+    "id": 141,
+    "summary": "There is no experiment to summarize as the provided text contains only headings with no content. The body of the experiment is empty, lacking a goal, procedure, and results."
+  },
+  {
+    "id": 140,
+    "summary": "The experiment \"Sequencing Novaseq 6000 Template Research\" (ID: 140) is a research study. The details of the experiment, including scope, bill of materials (BOM), and logbook, are not provided in the given text."
+  },
+  {
+    "id": 139,
+    "summary": "Here is a 2-line summary of the experiment:\nThe ORID0077_HSR experiment aims to identify structural variations on chromosome 6 using long reads. The experiment involves preparing DNA samples, sequencing them using Nanopore technology, and analyzing the results over several days (June 19-July 5, 2024)."
+  },
+  {
+    "id": 37,
+    "summary": "Here is a summary of the experiment in 2 lines:\nThe project aims to sequence bacterial species in blood and biopsy samples from CRC patients using targeted 16S sequencing. A total of 768 DNA samples were provided, and the sequencing protocol was executed using Beckman automation with some modifications to the standard Illumina protocol."
+  }
+]

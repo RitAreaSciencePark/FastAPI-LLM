@@ -1,0 +1,112 @@
+/* styles.css */
+
+html {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif; /* or a modern font like 'Roboto' */
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Overall page styling */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f9fafb;
+  color: #333;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* Headings */
+h2 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+/* Paragraphs and text */
+p {
+  margin: 0.5rem 0 1rem 0;
+}
+
+/* Horizontal rule divider */
+hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 1rem 0;
+}
+
+/* Form container */
+form {
+  margin: 1rem 0 2rem 0;
+}
+
+/* Labels */
+label {
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+  display: inline-block;
+}
+
+/* Textarea */
+textarea {
+  width: 100%;
+  max-width: 600px;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.5rem;
+  resize: vertical;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Submit button */
+input[type="submit"] {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #2980b9;
+}
+
+.mainWindow {
+    display: float;
+    padding: 30px;
+}
+
+/* SSE container */
+#sse-container {
+  margin-top: 1rem;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 1rem;
+}
+
+#sse-container p {
+  margin: 0.4rem 0;
+}
+
+/* Final answer container */
+#final-answer {
+  margin-top: 2rem;
+  background-color: #ecf0f1;
+  border-radius: 4px;
+  padding: 1rem;
+}
+
+#final-answer h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #27ae60;
+}

@@ -1,0 +1,51 @@
+<!-- templates/stream_map.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Streaming Summaries</title>
+  </head>
+  <body>
+    <h1>Stream Summaries</h1>
+
+    <!-- A button to start streaming -->
+    <button onclick="startStream()">Start Summaries</button>
+
+    <!-- A place to insert results -->
+    <div id="results"></div>
+
+    <script>
+      function startStream() {
+        // e.g. pass a user-typed query or hard-code for demonstration
+        const queryParam = encodeURIComponent("Your optional user query here");
+        const url = "/stream_map?query=" + queryParam;
+
+        // Create an EventSource for SSE
+        const es = new EventSource(url);
+
+        // When we get a message, process it
+        es.onmessage = function(event) {
+          console.log("SSE event:", event.data);
+          const data = JSON.parse(event.data);
+
+          // If "done", close the stream
+          if (data.done) {
+            es.close();
+            const div = document.getElementById("results");
+            div.innerHTML += "<hr><strong>Finished All Summaries!</strong><br>";
+            return;
+          }
+
+          // Otherwise, it's a partial result
+          const div = document.getElementById("results");
+          div.innerHTML += "<p>Experiment " + data.id + ": " + data.summary + "</p>";
+        };
+
+        es.onerror = function(err) {
+          console.error("SSE error:", err);
+          es.close();
+        };
+      }
+    </script>
+  </body>
+</html>

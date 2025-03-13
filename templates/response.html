@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>LLM Response</title>
+
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="/static/styles.css" />
+
+        <!-- Include jQuery (for example via CDN) -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+    <div class="mainWindow">
+        <h2>LLM Response:</h2>
+
+        <p><strong>User Query:</strong> {{ user_query }}</p>
+        <hr />
+
+
+        <p><strong>Assistant Reply:</strong> <br /><span id="assistant-reply">{{ assistant_reply }}</span></p>
+        <br/>
+
+        <!-- Form to ask a new question -->
+        <form action="/query" method="post">
+            <label for="content">Enter your query:</label><br><br>
+            <textarea name="content" rows="4" cols="50"></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+
+        {% if show_sse %}
+            <h2>Experiment Summaries (Streamed)</h2>
+            <div id="sse-container" style="border: 1px solid #ccc; padding: 10px;">
+                <!-- Streaming summaries will appear here -->
+            </div>
+
+            <script>
+            $(function() {
+                // Create an EventSource for the SSE stream
+                var source = new EventSource("/stream_map?query={{ user_query }}");
+
+                source.onmessage = function(event) {
+                    if (event.data) {
+                        try {
+                            var dataObj = JSON.parse(event.data);
+
+                            // Check if streaming is done
+                            if (dataObj.done) {
+                                // Close the SSE connection
+                                source.close();
+
+                                // Now we call our finalize endpoint via jQuery AJAX
+                                $.ajax({
+                                    url: "/finalize_answer",
+                                    method: "GET",
+                                    data: { query: "{{ user_query }}" },
+                                    dataType: "json"
+                                })
+                                .done(function(json) {
+                                    $("#assistant-reply").html(json.answer);
+                                })
+                                .fail(function(err) {
+                                    console.error("Error finalizing answer:", err);
+                                });
+
+                            } else {
+                                // Otherwise, we got a partial summary from SSE
+                                $("#sse-container").append(
+                                    "<p><strong>ID " + dataObj.id + ":</strong> "
+                                    + dataObj.summary + "</p>"
+                                );
+                            }
+                        } catch (e) {
+                            console.error("Could not parse SSE data:", event.data, e);
+                        }
+                    }
+                };
+
+                source.onerror = function(error) {
+                    console.error("SSE error:", error);
+                };
+            });
+            </script>
+        {% endif %}
+        </div>
+    {% if debug == True %}
+        <p><strong>LLM Input (Context):</strong> {{ llm_input }}</p>
+        <hr />
+    {% endif %}
+    </body>
+</html>
