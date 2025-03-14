@@ -35,7 +35,7 @@ class ElabVector:
         self.raw_data = self.elab_client.get_experiments()
 
         # Print the list of experiments returned
-        print(self.raw_data)
+        print(self.raw_data[:42])
 
         self.titles = []
         for experiment in self.raw_data:

@@ -119,6 +119,7 @@ async def get_query_form(request: Request):
 
 @app.post("/query", response_class=HTMLResponse)
 async def query_llm(request: Request, content: str = Form(...)):
+
     """
     Main endpoint. If experiments are needed and we don't have a good existing summary,
     we let the front-end do SSE streaming, then finalize automatically at the end.
